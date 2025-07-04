@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from</title>
+</head>
+<body>
+    <H1 align ="center">ลงทะเบียน</H1>
+    <form >
+        
+        <label for="fname">Frist Name</label>
+        <input type="text" placeholder="Enter your name">  <!--placeholder คือคำอธิบายในtextfied-->
+        <br><!-- ขึ้นบรรทัดใหม่-->
+        <br> <!-- ขึ้นบรรทัดใหม่-->
+        <label for="Lame">Last Name</label>
+        <input type="text">
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" name="" id="" min="0" max="99" value="22"> <!-- value กำหนดค่าเริ่มต้น-->
+        <br><br>
+        <label for="brithday">Brithday</label>
+        <input type="date">
+        <br><br>
+        
+        <label for="email">Email</label>
+        <input type="email" > <!--ถ้า type="email" ระบบจะตรวจสอบว่า มี @ และโดเมน เช่น test@abc.com, a@b.co.th ถ้าผู้ใช้กรอกไม่ถูกก็จะแจ้งเตือนกลับไป -->
+        <br><br>
+        <label for="Password">Password</label>
+        <input type="password" name="" id=""> <!-- ขณะที่กรอกข้อมูลใน textfied ผู้ใช้จะเห็นเป็นจุดๆดำๆ-->
+        <br><br>
+        <textarea name="" id="" rows="15" cols="100" placeholder ="comment"></textarea>
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="tel">
+        <br><br>
+        <label for="Time">Time</label>
+        <input type="time" >
+        <br><br>
+
+        <label for="Gender">เพศ</label> <br>
+        <input type="radio" name="gender">  ชาย    <!--ถ้าไม่ระบุ attribute name เดียวกันจะทำให้เลือกได้หลายตัวเลือกพร้อมกัน เพราะงั้นควรใส่ชื่อให้อยู่ในattribute name เดียวกัน-->
+        <input type="radio"name="gender"> หญิง
+        <input type="radio"name="gender"> ไม่ระบุ
+        <br><br>
+        <label for="like">Like</label>
+        <input type="checkbox" name="like" id="1"> Play game
+        <input type="checkbox" name="like" id="1"> coding
+        <input type="checkbox" name="like" id="1"> read books  <!--ถ้าเป็น checkbox จะสามารถเลือกได้หลายตัวเลือกพร้อมกัน-->
+        <input type="checkbox" name="like" id="1"> sleep
+
+
+        <div>
+            <h1>Dropdonw</h1>
+            <label for="color">color</label>
+            <select name="" id="">
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="sky" selected>sky</option> <!--selected กดหนดให้เป็นค่าเริ่มต้น-->
+                <option value="green">green</option>
+            </select>
+            
+
+
+        </div>
+
+
+    </form>
+</body>
+</html>
