@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="แบบแรก">
-  <title>Document</title> <!-- หัวข้อหน้าเว็บบนหัวสุด-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การกำหนดคุณสมบัติผ่าน tag</title>
+    <link rel="stylesheet" href="style.css"> <!--Test อีกไฟล์-->
+    <style>
+        
+        h1{
+            color: blueviolet;
+            font-size:50px;
+        }
+        h1.a{
+            color: aqua; <!--tag h1 ทีมี class a เท่านั้น-->
+        }
+        #a{
+            color: blue;
+        }
+        .a,#a{
+            font-style: italic; <!-- เข้าถึงทั้งคู่แล้วเปลี่ยนเป็นฟ้อนเอียง -->
+        }
+        p#me{
+            color: chartreuse;
+        }
+        p.ma{
+            font-style: oblique;
+        }
+    </style>
 </head>
-
 <body>
-  <h1>พี่จ๋าน้ำจะแตก</h1>  <!--หัวเรื่องด้วยแท็กtag h1 ขนาดตัวหนังสือใหญ่สุด จนถึงh6 เล็กสุด -->
-  <p>เนื้อหาเนื้อหาเนื้อหาเนื้อหาเนื้อหาเนื้อหาเนื้อหาเนื้อหา<small>เนื้อหาเนื้อหาเนื้อหาเนื้อหาเนื้อหาเนื้อหายาว<mark><br>ๆๆๆๆๆๆ</small></p> <!-- Paragraphs คือสำหรับไว้เขียนเนื้อหา  keyword lorem(ตามด้วยตัวเลข) บอทจะเจนเนื้อหาให้
-  tag ที่ใช่รวมกับparagraphs มีเยอะมาก ยกตัวอย่าง <smal>  
-  tag <mark> hilight text--> 
-  <!-- tag br คือการขึ้นบรรทัดใหม่ -->
-  <h1>H<sup>2</sup>O</h1>  <!--ยกกำลัง sup -->
-  <hr>  <!--การสร้างเส้นคั้น -->
-  <h1>H<sub>2</sub>O</h1>  <!--ห้อย    sub -->  
-  <a href="https://www.youtube.com/">เปิด</a>  <!-- เปิดเว็บค่าเริ่มต้น -->
-  <a href="https://www.youtube.com/" target="_blank">เปิด</a>   <!--เปิดเว็บแบบอีกแท็บใหม่ ใช้ target="_blank" -->
-  <a href="page2.html" target="_blank" >เปิดหน้าที่2</a>
-  <a href="page3.html" >เปิดหน้าที่3</a> <!-- เอา target blank ออก จะไม่ขึ้นtabใหม่-->
-  <a href=addess/addess.html >เปิดโฟล์เดอร์นอก</a>
-  
+    <h1>การกำหนดคุณสมบัติผ่าน tag</h1>
+    <h1 class="a">การกำหนดคุณสมบัติผ่าน tag เข้าถึง class</h1>
+    <h1 id="a">การกำหนดคุณสมบัติผ่าน tag เข้าถึง id</h1>
+    <p id="me">ใช้P</p>
+    <p class="ma">ใช้P</p>
+    
+    <h1 class="test">Test Style อีกไฟล์</h1>
+
+    
 </body>
 </html>
